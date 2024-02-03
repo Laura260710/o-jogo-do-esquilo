@@ -12,7 +12,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(wi2dth/2, windowHeight/2);
+  createCanvas(windowWidth/2, windowHeight/2);
   jogador = new Jogador();
 }
 
