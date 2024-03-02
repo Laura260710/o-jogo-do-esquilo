@@ -13,10 +13,15 @@ function preload(){
 
 function setup() {
   createCanvas(windowWidth/2, windowHeight/2);
+  fundo = new Fundo();
   jogador = new Jogador();
 }
 
 function draw() {
   background(220);
+  fundo.show();
   jogador.show();
 }
+
+
+
