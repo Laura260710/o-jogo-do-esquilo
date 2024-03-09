@@ -21,7 +21,11 @@ function draw() {
   background(220);
   fundo.show();
   jogador.show();
+  jogador.move();
 }
 
-
-
+function keyPressed() {
+  if (key==" "){
+    jogador.jump();
+  }
+}

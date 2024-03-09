@@ -11,4 +11,16 @@ class Jogador{
   show(){
     image(imgjogador, this.x, this.y, this.w, this.h);
   }
+
+  jump(){
+    if(this.y==height - this.h) {
+    this.vy= -35;
+  }
+  }
+
+  move(){
+    this.y += this.vy;
+    this.vy +=this.g;
+    this.y = constrain(this.y, 30, height - this.h);
+  }
 }
